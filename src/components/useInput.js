@@ -53,6 +53,14 @@ const Input = styled.input`
   }
 `;
 
+const Small = styled.p`
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #333;
+  text-align: center;
+`;
+
 // input
 const inputHooks = (initialValue, validator) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -92,6 +100,7 @@ const useInput = () => {
       <Border />
 
       <Input {...name} name="name" />
+      <Small>Max Length : 10</Small>
     </div>
   );
 };

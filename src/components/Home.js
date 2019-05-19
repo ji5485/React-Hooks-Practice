@@ -51,8 +51,8 @@ const Home = () => {
     "useAxios"
   ];
 
-  const linkList = link.map(item => (
-    <LinkButton to={"/" + item} key={item}>
+  const linkList = link.map((item, index) => (
+    <LinkButton to={"/" + item} key={index}>
       {item}
     </LinkButton>
   ));
