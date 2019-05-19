@@ -19,14 +19,14 @@ const LinkWrapper = styled.div`
 
 const LinkButton = styled(Link)`
   text-decoration: none;
-  color: black;
+  color: #333;
   padding: 20px 40px;
   border: 0.5px solid #333;
   font-size: 1.5rem;
   font-weight: 300;
   margin-right: 20px;
   margin-bottom: 20px;
-  transition: 0.3s all;
+  transition: 0.1s all;
 
   &:hover {
     background: #333;
