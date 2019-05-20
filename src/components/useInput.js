@@ -73,7 +73,7 @@ const inputHooks = (initialValue, validator) => {
 
     let willUpdate = typeof validator === "function" ? validator(value) : true;
 
-    if (willUpdate) setValue(e.target.value);
+    if (willUpdate) setValue(value);
   };
 
   return { value, onChange };
