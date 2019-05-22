@@ -1,9 +1,24 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Home, useInput, useTabs, useTitle, useClick } from "components";
+import {
+  Home,
+  useInput,
+  useTabs,
+  useTitle,
+  useClick,
+  useConfirm,
+  usePreventLeave
+} from "components";
 
 function App() {
-  const hooks = [{ useInput }, { useTabs }, { useTitle }, { useClick }];
+  const hooks = [
+    { useInput },
+    { useTabs },
+    { useTitle },
+    { useClick },
+    { useConfirm },
+    { usePreventLeave }
+  ];
 
   return (
     <Router>
