@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Home, useInput, useTabs, useTitle } from "components";
+import { Home, useInput, useTabs, useTitle, useClick } from "components";
 
 function App() {
-  const hooks = [{ useInput }, { useTabs }, { useTitle }];
+  const hooks = [{ useInput }, { useTabs }, { useTitle }, { useClick }];
 
   return (
     <Router>
